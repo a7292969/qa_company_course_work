@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    height: fit-content;
+}
+
+.reviewText {
+    overflow-y: hidden;
+    margin-bottom: 15px;
+}
+
+.reviewUser {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.review {
+    max-width: 350px;
+    max-height: 200px;
+    background-color: rgb(252, 245, 227);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}

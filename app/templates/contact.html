@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="static/contact.css" rel="stylesheet">
+{% endblock head %}
+{% block content %}
+<div class="content">
+    <div class="pageHeader">
+        <div class="pageHeaderInner">
+            <h1>Контакти</h1>
+            <p class="welcome">Привіт! Ми любимо отримувати від вас повідомлення, тому не соромтеся написати нам на
+                hello@boomerzo.com</p>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 50px;">Наш Головний Офіс</h2>
+    <div class="table">
+        <div class="tableRow" style="margin-right: 20px;">
+            <div style="width: 150px; color: blue">Телефон</div>
+            <div>+38 (099) 344 4010</div>
+        </div>
+        <div class="tableRow">
+            <div style="width: 150px; color: blue; flex-shrink: 0">Адреса</div>
+            <div>Kryvalivska St, Building 8, Apartment 32, Cherkasy, Cherkas'ka oblast, 18000</div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

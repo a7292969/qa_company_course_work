@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="static/reviews.css" rel="stylesheet">
+{% endblock head %}
+{% block content %}
+<div class="content">
+    {% for review in reviews %}
+    <div class="review">
+        <div class="reviewText">{{review.comment}}</div>
+        <hr>
+        <div class="reviewUser">{{review.user}}</div>
+    </div>
+    {% endfor%}
+</div>
+{% endblock content %}

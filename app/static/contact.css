@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-image: url(/static/contact.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pageHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff, #00000000);
+}
+
+.pageHeaderInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.welcome {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-top: 25px;
+    width: 500px;
+}
+
+.tableRow {
+    width: 550px;
+    height: 75px;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+}

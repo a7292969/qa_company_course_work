@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <title>BoomerZo &ndash; we own your business</title>
+    {% block head %}{% endblock head %}
+</head>
+
+<body>
+    <div class="cont">
+        <div class="header">
+            <div class="header_inner">
+                <a href="/">
+                    Головна
+                </a>
+                <a href="/clients">
+                    Наші Клієнти
+                </a>
+                <a href="/reviews">
+                    Відгуки
+                </a>
+                <a href="/career">
+                    Кар'єра
+                </a>
+                <a href="/contact">
+                    Контакти
+                </a>
+            </div>
+        </div>
+
+        <main class="main">
+            {% block content%}{% endblock content %}
+        </main>
+
+        <div class="footer">
+            @ 2031 BoomerZo, Inc
+        </div>
+    </div>
+</body>
+
+</html>
