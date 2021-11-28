@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 30px;
+    align-items: center;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cardName {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.cardText {
+    overflow-y: hidden;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.cardSalary {
+    overflow-y: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* text-align: right; */
+    font-size: 22px;
+}
+
+.salary {
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+    max-width: 350px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 12px 12px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}

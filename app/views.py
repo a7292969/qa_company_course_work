@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Review
+from .models import Review, Vacancy
 
 # Create your views here.
 
@@ -19,7 +19,8 @@ def reviews(req):
 
 
 def career(req):
-    return render(req, 'career.html')
+    vacancies = Vacancy.objects.all()
+    return render(req, 'career.html', {'vacancies': vacancies})
 
 
 def contact(req):

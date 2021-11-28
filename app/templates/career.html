@@ -4,5 +4,20 @@
 {% endblock head %}
 {% block content %}
 <div class="content">
+    <h1>Ми пропонуємо вам наступні вакансії</h1>
+    <div class="cards">
+        {% for vac in vacancies %}
+        <div class="card">
+            <div class="cardName">{{vac.name}}</div>
+            <hr>
+            <div class="cardText">{{vac.summary}}</div>
+            <hr>
+            <div class="cardSalary" style="float: left">
+                <span style="float: left">Зарплатня:</span>
+                <span class="salary" style="float: right">{{vac.salary}} UAH</span>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
 </div>
 {% endblock content %}
